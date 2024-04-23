@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<body>
+    <header>
+        <nav>
+          <img class="nav__logo"  src="./favicon.ico" alt="icon logo">
+    
+            <ul class="nav__list">
+                <li>Tendencias</li>
+                <li> Registrarse</li>
+                <li>iniciar Sesion</li>
+            </ul> 
+   
+        </nav>
+    </header>
+    <main>
+        <section class="title__home"> 
+            <h1>Peliculas y series ilimitadas <br>
+            en un solo lugar</h1>
+            <h2>disfrutalas donde quieras <br>
+            cancela en cualquier momento</h2> 
+        </section>
+        <section class="submit__home">
+            <h2>¿Que estas buscando para ver?</h2>
+            <form action="submit">
+                <input class="search__bar" type="text" placeholder="Buscar">
+                <input class="submit__btn" type="submit" value="Buscar">
+            </form>
+            <hr class="line">
+        </section>
+    
+  
+        <section class="trending__home">
+            <h3>Tendencias</h3>
+            <div class="cards__container" id="cards__container"></div>
+            <div class="buttons">         
+                <button id="prev__button" class="prev__button">Anterior</button>
+                <button id="next__button" class="next__button">Siguiente</button>
+            </div>
+   
+        </section>
+        <hr class="line">
+        <section class="aclamadas__container">
+            <h3>Las mas aclamadas</h3>
+            <div class="slider__container">
+            <img class="slider__img" src="./assets/img/aclamada_1.jpg" alt="">
+            <img class="slider__img"  src="./assets/img/aclamada_2.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_3.jpg"" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_4.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_5.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_6.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_7.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_8.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_9.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_10.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_11.jpg" alt="">
+            <img class="slider__img" src="./assets/img/aclamada_12.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer__buttons">
+    <ul>
+        <li>Terminos y condiciones</li>
+        <li>Preguntas Frecuentes</li>
+        <li> Ayuda</li>
+        <li>
+            <button class="footer__btn">Administrador Peliculas</button>
+        </li>
+    </ul>
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <i class="bi-arrow-up-circle"></i>
+      </button>
+    </footer >
+
+  
+    <script src="index.js"></script>
+</body>
+</html>
