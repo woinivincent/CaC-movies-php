@@ -13,9 +13,9 @@
           <img class="nav__logo"  src="./favicon.ico" alt="icon logo">
     
             <ul class="nav__list">
-                <li>Tendencias</li>
-                <li> Registrarse</li>
-                <li>iniciar Sesion</li>
+                <li><a href="#trending">Tendencias</a></li>
+                <li><a href="/pages/register.html">Registrarse</a></li>
+                <li><a href="/pages/login.html">Iniciar Sesión</a></li>
             </ul> 
    
         </nav>
@@ -37,7 +37,7 @@
         </section>
     
   
-        <section class="trending__home">
+        <section class="trending__home" id="trending">
             <h3>Tendencias</h3>
             <div class="cards__container" id="cards__container"></div>
             <div class="buttons">         
@@ -47,7 +47,7 @@
    
         </section>
         <hr class="line">
-        <section class="aclamadas__container">
+         <section class="aclamadas__container">
             <h3>Las mas aclamadas</h3>
             <div class="slider__container">
             <img class="slider__img" src="./assets/img/aclamada_1.jpg" alt="">
@@ -81,5 +81,6 @@
 
   
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
