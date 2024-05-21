@@ -1,11 +1,11 @@
-// Obtener el formulario
+
 const form = document.querySelector('form');
 
-// Escuchar el evento submit del formulario
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Evitar el envío del formulario
 
-  // Obtener los valores de los campos
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  
   const nombre = document.querySelector('#nombre').value.trim();
   const apellido = document.querySelector('#apellido').value.trim();
   const email = document.querySelector('#email').value.trim();
@@ -14,7 +14,7 @@ form.addEventListener('submit', function(event) {
   const pais = document.querySelector('#pais').value.trim();
   const terminos = document.querySelector('#terminos').checked;
 
-  // Validar los campos
+  
   let isValid = true;
   const errorTexts = document.querySelectorAll('.error-text');
   errorTexts.forEach(errorText => errorText.textContent = '');
@@ -60,7 +60,7 @@ form.addEventListener('submit', function(event) {
     document.querySelector('#terminos + .error-text').textContent = 'Debe aceptar los términos y condiciones.';
   }
 
-  // Si la validación es exitosa
+ 
   if (isValid) {
     mostrarCartelExito();
   }
@@ -74,6 +74,6 @@ function mostrarCartelExito() {
 
   setTimeout(() => {
     document.body.removeChild(cartel);
-    window.location.href = "../index.html"; // Reemplaza '/home' con la ruta correcta de tu página de inicio
-  }, 3000); // Redirigir después de 3 segundos
+    window.location.href = "../index.html"; 
+  }, 3000);
 }
